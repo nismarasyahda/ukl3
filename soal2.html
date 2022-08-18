@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript">
+        function tambah(){
+            a=kirim.T1.value
+            b=kirim.T3.value
+            kirim.T2.value=parseInt(a)+parseInt(b)
+        }
+        function kurang(){
+            a=kirim.T1.value
+            b=kirim.T3.value
+            kirim.T2.value=parseInt(a)-parseInt(b)
+        }
+        function bagi(){
+            a=kirim.T1.value
+
+            b=kirim.T3.value
+            kirim.T2.value=parseInt(a)/parseInt(b)
+        }
+        function kali(){
+            a=kirim.T1.value
+            b=kirim.T3.value
+            kirim.T2.value=parseInt(a)*parseInt(b)
+        }
+      </script>  
+      <form name="kirim">
+        <p>Bilangan 1 <input type="text" name="T1" size="20"> <br> </p>
+        <p>Bilangan 2 <input type="text" name="T3" size="20"> <br> </p>
+        <p>Hasil <input readonly type="text" name="T2" size="20"></p>
+        <p>
+            <input type="button" value="+" onclick=tambah()>
+            <input type="button" value="-" onclick=kurang()>
+            <input type="button" value="/" onclick=bagi()>
+            <input type="button" value="*" onclick=kali()>
+        </p>
+        <p>
+        
+      </form>
+</body>
+</html>
